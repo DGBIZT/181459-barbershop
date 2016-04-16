@@ -1,7 +1,7 @@
 # Учебный проект «Барбершоп»
 
 * Студент: [Георгий Горлов](https://up.htmlacademy.ru/htmlcss/13/user/181459).
-Наставник: [Ира Ожерельева] (https://htmlacademy.ru/profile/id3762).
+* Наставник: [Ира Ожерельева] (https://htmlacademy.ru/profile/id3762).
 
 ---
 

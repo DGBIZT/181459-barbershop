@@ -6,10 +6,12 @@
 	</head>
 	<body>
 		<header class="main-header">
-			<div class="conteiner">
+			<div class="container">
 				<nav class="main-navigation"> <!-- Навигационное меню-->
+					<div class="logotype">
+						<a href="#"><img src="http://placehold.it/150x100" alt="barbeshop"></a>
+					</div>
 					<ul>
-						<li><a href="#"><img src="http://placehold.it/150x100"></a></li>
 						<li><a href="#">Информация</a></li>
 						<li><a href="#">Новости</a></li>
 						<li><a href="#">Прайс-Лист</a></li>
@@ -23,86 +25,88 @@
 			</div>
 		</header>
 		<main class="container">
-			<h1>Средства для ухода</h1>
+			<h1 class="heading-one">Средства для ухода</h1>
 			<nav class="breadcrumbs"> <!-- -навигация по сайту-->
 				<ul>
 					<li><a href="#">Главная</a></li>
 					<li><a href="#">Магазин</a></li>
-					<li><a href="#">Средства для ухода</a></li>
+					<li>Средства для ухода</li>
 				</ul>
 			</nav>	
 			<div class="selection">
-				<h2>ПРОИЗВОДИТЕЛИ:</h2>
-				<select name="producer" multiple syze="6" >
-					<option value="California" selected> BAXTER OF CALIFORNIA</option>
-					<option value="Mr.natty"> MR NATTY</option>
-					<option value="Suavecito" selected> SUAVECITO</option>
-					<option value="Malin-goetz"> MALIN-GOETZ</option>
-					<option value="Murrays"> MURRAYS</option>
-					<option value="American crew" selected> AMERICAN CREW</option>
-				</select>
-				<h2>ГРУППЫ ТОВАРОВ:</h2>
-				<label>
-					<input type="radio" name="group-goods" value="shaving-tackle"> БРИТВЕННЫЕ ПРИНАДЛЕЖНОСТИ
-				</label><br>
-				<label>
-					<input type="radio" checked name="group-goods" value="skin-care">СРЕДСТВА ДЛЯ УХОДА
-				</label><br>
-				<label>
-					<input type="radio" checked name="group-goods" value="accessory">АКСЕССУАРЫ			
-				</label>
-				<p><a class="see" href="#">Показать</a></p>
+				<form action="#" method="get">
+					<h2 class="heading-two">Производители:</h2>
+					<select name="producer" multiple size="6" >
+						<option value="California" selected> Baxter of California</option>
+						<option value="Mr.natty"> Mr natty</option>
+						<option value="Suavecito" selected> Suavecito</option>
+						<option value="Malin-goetz"> Malin-goetz</option>
+						<option value="Murrays"> Murrays</option>
+						<option value="American crew" selected> American crew</option>
+					</select>
+					<h2 class="heading-two">Группы товаров:</h2>
+					<label>
+						<input type="radio" name="group-goods" value="shaving-tackle"> Бритвенные принадлежности
+					</label>
+					<label>
+						<input type="radio" checked name="group-goods" value="skin-care"> Среда для ухода
+					</label>
+					<label>
+						<input type="radio" checked name="group-goods" value="accessory">Аксессуары			
+					</label>
+					<p><input type="submit" value="Показать"></p>
+				</form>
 			</div>
-			<div class="catalog-2">
-				<article class="picture-1">
+			<div class="catalog-goods">
+				<div class="goods-loaded">
 					<a href="#">
 						<img src="http://placehold.it/150x100" alt="Набор для путешествий &#34;BAXTER OF CALIFORNIA&#34;">
 					</a>
-					<p>2900 РУБ. <a href="#"> КУПИТЬ</a></p>							
-				</article>
-				<article class="picture-2">
+					<p><span class="cost">2900 РУБ.</span> <a href="#" class="buy"> Купить</a></p>							
+				</div>
+				<div class="goods-loaded">
 					<a href="#">
 						<img src="http://placehold.it/150x100" alt="Увлажняющий кондиционер &#34;BAXTER OF CALIFORNIA&#34;">
 					</a>
-					<p>750 РУБ.<a href="#"> КУПИТЬ</a></p>
-				</article>
-				<article class="picture-3">
+					<p><span class="cost">750 РУБ.</span><a href="#" class="buy"> Купить</a></p>
+				</div>
+				<div class="goods-loaded">
 					<a href="#">
 						<img src="http://placehold.it/150x100" alt="Гель для волос &#34;SUAVECITO&#34;">
 					</a>
-					<p>290 РУБ.<a href="#">КУПИТЬ</a></p>
-				</article>
-				<article class="picture-4">
+					<p><span class="cost">290 РУБ.</span><a href="#" class="buy">Купить</a></p>
+				</div>
+				<div class="goods-loaded">
 					<a href="#">
 						<img src="http://placehold.it/150x100" alt="Глина для укладки волос &#34;AMERICAN CREW&#34;">
 					</a>
-					<p>500 РУБ.<a href="#">КУПИТЬ</a><p>
-				</article>
-				<article class="picture-5">
+					<p><span class="cost">500 РУБ.</span><a href="#" class="buy">Купить</a><p>
+				</div>
+				<div class="goods-loaded">
 					<a href="#">
 						<img src="http://placehold.it/150x100" alt="Гель для волос &#34;AMERICAN CREW&#34;">
 					</a>
-					<p>300 РУБ.<a href="#">КУПИТЬ</a></p>
-				</article>
-				<article class="picture-6">
+					<p><span class="cost">300 РУБ.</span><a href="#" class="buy">Купить</a></p>
+				</div>
+				<div class="goods-loaded">
 					<a href="#">
 						<img src="http://placehold.it/150x100" alt="Набор для бритья &#34;BAXTER OF CALIFORNIA&#34;">
 					</a>
-					<p>3900 РУБ.<a href="#">КУПИТЬ</a></p>
-				</article>
+					<p><span class="cost">3900 РУБ.</span><a href="#" class="buy">Купить</a></p>
+				</div>
 			</div>
-			</div> <!-- ССылки 1,2,3,4-->
-				<a href="#">1</a>
-				<a href="#">2</a>
-				<a href="#">3</a>
-				<a href="#">4</a>
+			<div class="pl-item"> <!-- ССылки 1,2,3,4-->
+				<a href="#" class="pli-link">1</a>
+				<a href="#" class="pli-link">2</a>
+				<a href="#" class="pli-link">3</a>
+				<a href="#" class="pli-link">4</a>
 			</div>
 		</main>
 		<footer class="main-footer">
 			<div class="footer-contacts" >
-				Барбершоп «Бородинский»<br>
-				Адрес: г. Санкт-Петербург, Б. Конюшенная, д. 19/8<br>
-				<a href="#">Как нас найти?</a><br>
+				Барбершоп «Бородинский» 
+				Адрес: г. Санкт-Петербург, Б. Конюшенная, д. 19/8 
+				<a href="#">Как нас найти?</a> 
 				Телефон: +7 (812) 666-02-66
 			</div>
 			<div class="footer-social">

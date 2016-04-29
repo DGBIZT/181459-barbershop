@@ -1,7 +1,9 @@
 <!DOCTYPE HTML>
 <html lang="ru">
 	<head>
+		<link href="css/normalize.css" rel="stylesheet">
 		<link href='https://fonts.googleapis.com/css?family=PT+Sans:400,700,400italic' rel='stylesheet' type='text/css'>
+		<link href='https://fonts.googleapis.com/css?family=Pragati+Narrow:400,700' rel='stylesheet' type='text/css'>
 		<meta charset="utf-8">
 		<title>Барбершоп-Каталог</title>
 		<link href="css/style.css" rel="stylesheet">
@@ -10,9 +12,7 @@
 		<header class="main-header">
 			<div class="container clearfix">
 				<nav class="main-navigation"> <!-- Навигационное меню-->
-					<div class="logotype">
-						<a href="#"><img src="img/decor/Logo.png" alt="barbeshop"></a>
-					</div>
+					<a href="#" class="logotype"><img src="img/decor/Logo.png" alt="barbeshop"></a>
 					<ul>
 						<li><a href="#" class="main-navig">Информация</a></li>
 						<li><a href="#" class="main-navig">Новости</a></li>
@@ -27,70 +27,70 @@
 			</div>
 		</header>
 		<main class="container">
-			<h1 class="heading-one">Средства для ухода</h1>
-			<nav class="breadcrumbs"> <!-- -навигация по сайту-->
-				<ul>
+			<h1 class="heading-one">Средства для ухода</h1> 
+				<ul class="breadcrumbs"> <!-- -навигация по сайту-->
 					<li><a href="#">Главная</a></li>
 					<li><a href="#">Магазин</a></li>
 					<li class="resources">Средства для ухода</li>
 				</ul>
-			</nav>	
-			<div class="selection">
-				<form action="#" method="get">
-					<h2 class="heading-two">Производители:</h2>
-					<select name="producer" multiple size="6" >
-						<option value="California" selected> Baxter of California</option>
-						<option value="Mr.natty"> Mr natty</option>
-						<option value="Suavecito" selected> Suavecito</option>
-						<option value="Malin-goetz"> Malin-goetz</option>
-						<option value="Murrays"> Murrays</option>
-						<option value="American crew" selected> American crew</option>
-					</select>
-					<h2 class="heading-two">Группы товаров:</h2>
-					<label>
-						<input type="radio" name="group-goods" value="shaving-tackle"> Бритвенные принадлежности
-					</label>
-					<label>
-						<input type="radio" checked name="group-goods" value="skin-care"> Среда для ухода
-					</label>
-					<label>
-						<input type="radio" checked name="group-goods" value="accessory">Аксессуары			
-					</label>
-					<p><input type="submit" value="Показать"></p>
-				</form>
-			</div>
-			<div class="catalog-goods">
-				<div class="goods-loaded">
+			<div class="selection-goods clearfix">
+				<div class="selection clearfix">
+					<form action="#" method="get">
+						<h2 class="heading-two">Производители:</h2>
+						<select name="producer" multiple size="6" >
+							<option value="California" selected> Baxter of California</option>
+							<option value="Mr.natty"> Mr natty</option>
+							<option value="Suavecito" selected> Suavecito</option>
+							<option value="Malin-goetz"> Malin-goetz</option>
+							<option value="Murrays"> Murrays</option>
+							<option value="American crew" selected> American crew</option>
+						</select>
+						<h2 class="heading-two ">Группы товаров:</h2>
+						<label>
+							<input type="radio" name="group-goods" value="shaving-tackle"> Бритвенные принадлежности
+						</label>
+						<label>
+							<input type="radio" checked name="group-goods" value="skin-care"> Среда для ухода
+						</label>
+						<label>
+							<input type="radio" checked name="group-goods" value="accessory">Аксессуары			
+						</label>
+						<p><input type="submit" value="Показать"></p>
+					</form>
+				</div>
+				<div class="catalog-goods clearfix">
+					<div class="goods-loaded">
 						<img src="img/content/Layer1.jpg" width="220" height="165" alt="Набор для путешествий &#34;BAXTER OF CALIFORNIA&#34;">
 						<p><span class="cost">2900 РУБ.</span> <a href="#" class="buy"> Купить</a></p>							
+					</div>
+					<div class="goods-loaded">
+						<img src="img/content/Layer2.jpg" width="220" height="165" alt="Увлажняющий кондиционер &#34;BAXTER OF CALIFORNIA&#34;">
+						<p><span class="cost">750 РУБ.</span><a href="#" class="buy"> Купить</a></p>
+					</div>
+					<div class="goods-loaded">
+						<img src="img/content/Layer3.jpg" width="220" height="165" alt="Гель для волос &#34;SUAVECITO&#34;">
+						<p><span class="cost">290 РУБ.</span><a href="#" class="buy">Купить</a></p>
+					</div>
+					<div class="goods-loaded">
+						<img src="img/content/Layer4.jpg" width="220" height="165" alt="Глина для укладки волос &#34;AMERICAN CREW&#34;">
+						<p><span class="cost">500 РУБ.</span><a href="#" class="buy">Купить</a><p>
+					</div>
+					<div class="goods-loaded">
+						<img src="img/content/Layer5.jpg" width="220" height="165" alt="Гель для волос &#34;AMERICAN CREW&#34;">
+						<p><span class="cost">300 РУБ.</span><a href="#" class="buy">Купить</a></p>
+					</div>
+					<div class="goods-loaded">
+						<img src="img/content/Layer6.jpg" width="220" height="165" alt="Набор для бритья &#34;BAXTER OF CALIFORNIA&#34;">
+						<p><span class="cost">3900 РУБ.</span><a href="#" class="buy">Купить</a></p>
+					</div>
+					<div class="pl-item clearfix"> <!-- ССылки 1,2,3,4-->
+						<a href="#" class="pli-link">1</a>
+						<a href="#" class="pli-link">2</a>
+						<a href="#" class="pli-link">3</a>
+						<a href="#" class="pli-link">4</a>
+					</div>
 				</div>
-				<div class="goods-loaded">
-					<img src="img/content/Layer2.jpg" width="220" height="165" alt="Увлажняющий кондиционер &#34;BAXTER OF CALIFORNIA&#34;">
-					<p><span class="cost">750 РУБ.</span><a href="#" class="buy"> Купить</a></p>
-				</div>
-				<div class="goods-loaded">
-					<img src="img/content/Layer3.jpg" width="220" height="165" alt="Гель для волос &#34;SUAVECITO&#34;">
-					<p><span class="cost">290 РУБ.</span><a href="#" class="buy">Купить</a></p>
-				</div>
-				<div class="goods-loaded">
-					<img src="img/content/Layer4.jpg" width="220" height="165" alt="Глина для укладки волос &#34;AMERICAN CREW&#34;">
-					<p><span class="cost">500 РУБ.</span><a href="#" class="buy">Купить</a><p>
-				</div>
-				<div class="goods-loaded">
-					<img src="img/content/Layer5.jpg" width="220" height="165" alt="Гель для волос &#34;AMERICAN CREW&#34;">
-					<p><span class="cost">300 РУБ.</span><a href="#" class="buy">Купить</a></p>
-				</div>
-				<div class="goods-loaded">
-					<img src="img/content/Layer6.jpg" width="220" height="165" alt="Набор для бритья &#34;BAXTER OF CALIFORNIA&#34;">
-					<p><span class="cost">3900 РУБ.</span><a href="#" class="buy">Купить</a></p>
-				</div>
-			</div>
-			<div class="pl-item"> <!-- ССылки 1,2,3,4-->
-				<a href="#" class="pli-link">1</a>
-				<a href="#" class="pli-link">2</a>
-				<a href="#" class="pli-link">3</a>
-				<a href="#" class="pli-link">4</a>
-			</div>
+			</div>	
 		</main>
 		<footer class="main-footer">
 			<div class="container clearfix">

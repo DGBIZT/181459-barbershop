@@ -13,11 +13,12 @@
 			<div class="container clearfix">
 				<nav class="main-navigation"> <!-- Навигационное меню-->
 					<a href="#" class="logotype"><img src="img/decor/Logo.png" alt="barbeshop"></a>
-					<ul>
+					<ul class="top-menu">
 						<li><a href="#" class="main-navig">Информация</a></li>
 						<li><a href="#" class="main-navig">Новости</a></li>
 						<li><a href="#" class="main-navig">Прайс-Лист</a></li>
 						<li><a href="#" class="main-navig">Магазин</a></li>
+						<div class="halp-line"></div>
 						<li><a href="#" class="main-navig">Контакты</a></li>
 					</ul>
 				</nav>
@@ -29,58 +30,68 @@
 		<main class="container">
 			<h1 class="heading-one">Средства для ухода</h1> 
 				<ul class="breadcrumbs"> <!-- -навигация по сайту-->
-					<li><a href="#">Главная</a></li>
-					<li><a href="#">Магазин</a></li>
+					<li><a href="#"><div class="rhomb1"></div>Главная</a> </li>
+					<li><a href="#"><div class="rhomb2"></div>Магазин</a> </li>
 					<li class="resources">Средства для ухода</li>
 				</ul>
 			<div class="selection-goods clearfix">
 				<div class="selection clearfix">
 					<form action="#" method="get">
-						<h2 class="heading-two">Производители:</h2>
-						<select name="producer" multiple size="6" >
-							<option value="California" selected> Baxter of California</option>
-							<option value="Mr.natty"> Mr natty</option>
-							<option value="Suavecito" selected> Suavecito</option>
-							<option value="Malin-goetz"> Malin-goetz</option>
-							<option value="Murrays"> Murrays</option>
-							<option value="American crew" selected> American crew</option>
-						</select>
-						<h2 class="heading-two ">Группы товаров:</h2>
-						<label>
-							<input type="radio" name="group-goods" value="shaving-tackle"> Бритвенные принадлежности
-						</label>
-						<label>
-							<input type="radio" checked name="group-goods" value="skin-care"> Среда для ухода
-						</label>
-						<label>
-							<input type="radio" checked name="group-goods" value="accessory">Аксессуары			
-						</label>
-						<p><input type="submit" value="Показать"></p>
+						<span class="heading-select">Производители:</span>
+							<input type="checkbox" name="group-goods" value="Baxter of California" id="ch4"> 
+							<label for="ch4">Baxter of California</label>
+							<input type="checkbox" name="group-goods" value="Mr.natty" id="ch5">
+							<label for="ch5">Mr natty</label>
+							<input type="checkbox" name="group-goods" value="Suavecito" id="ch6"> 
+							<label for="ch6">Suavecito</label>
+							<input type="checkbox" name="group-goods" value="Malin-goetz" id="ch7"> 
+							<label for="ch7" >Malin-goetz</label>
+							<input type="checkbox" name="group-goods" value="Murrays" id="ch8">
+							<label for="ch8">Murrays</label>
+							<input type="checkbox" name="group-goods" value="American crew" id="ch9" checked> 
+							<label for="ch9">American crew</label>
+						
+						<span class="heading-two">Группы товаров:</span>
+							<input type="radio" name="group-goods" value="shaving-tackle" id="ch1"> 
+							<label for="ch1">Бритвенные принадлежности </label>
+							<input type="radio" checked name="group-goods" value="skin-care" id="ch2">
+							<label for="ch2">Среда для ухода</label>
+							<input type="radio" checked name="group-goods" value="accessory" id="ch3">			
+							<label for="ch3">Аксессуары</label>
+						<p><input type="submit" value="Показать" id="ch10">
+							<label for="ch10">Показать</label>
+						</p>
 					</form>
 				</div>
 				<div class="catalog-goods clearfix">
 					<div class="goods-loaded">
 						<img src="img/content/Layer1.jpg" width="220" height="165" alt="Набор для путешествий &#34;BAXTER OF CALIFORNIA&#34;">
-						<p><span class="cost">2900 РУБ.</span> <a href="#" class="buy"> Купить</a></p>							
+						<p>Набор для путешествий<br> &#34;BAXTER OF CALIFORNIA&#34;</p>
+						<p><span class="cost">2900 РУБ.</span><a href="#" class="buy"> Купить</a></p>							
 					</div>
 					<div class="goods-loaded">
 						<img src="img/content/Layer2.jpg" width="220" height="165" alt="Увлажняющий кондиционер &#34;BAXTER OF CALIFORNIA&#34;">
+						<p>Увлажняющий кондиционер<br>&#34;BAXTER OF CALIFORNIA&#34;</p>
 						<p><span class="cost">750 РУБ.</span><a href="#" class="buy"> Купить</a></p>
 					</div>
 					<div class="goods-loaded">
 						<img src="img/content/Layer3.jpg" width="220" height="165" alt="Гель для волос &#34;SUAVECITO&#34;">
+						<p>Гель для волос<br>&#34;SUAVECITO&#34;</p>
 						<p><span class="cost">290 РУБ.</span><a href="#" class="buy">Купить</a></p>
 					</div>
 					<div class="goods-loaded">
 						<img src="img/content/Layer4.jpg" width="220" height="165" alt="Глина для укладки волос &#34;AMERICAN CREW&#34;">
+						<p>Глина для укладки волос<br> &#34;AMERICAN CREW&#34;</p>
 						<p><span class="cost">500 РУБ.</span><a href="#" class="buy">Купить</a><p>
 					</div>
 					<div class="goods-loaded">
 						<img src="img/content/Layer5.jpg" width="220" height="165" alt="Гель для волос &#34;AMERICAN CREW&#34;">
+						<p>Гель для волос<br> &#34;AMERICAN CREW&#34;</p>
 						<p><span class="cost">300 РУБ.</span><a href="#" class="buy">Купить</a></p>
 					</div>
 					<div class="goods-loaded">
 						<img src="img/content/Layer6.jpg" width="220" height="165" alt="Набор для бритья &#34;BAXTER OF CALIFORNIA&#34;">
+						<p>Набор для бритья<br> &#34;BAXTER OF CALIFORNIA&#34;</p>
 						<p><span class="cost">3900 РУБ.</span><a href="#" class="buy">Купить</a></p>
 					</div>
 					<div class="pl-item clearfix"> <!-- ССылки 1,2,3,4-->
@@ -95,9 +106,9 @@
 		<footer class="main-footer">
 			<div class="container clearfix">
 			<div class="footer-contacts">
-				Барбершоп «Бородинский» 
+				Барбершоп «Бородинский»<br>
 				Адрес: г. Санкт-Петербург, Б. Конюшенная, д. 19/8 
-				<a href="#">Как нас найти?</a> 
+				<a href="#">Как нас найти?</a><br>
 				Телефон: +7 (812) 666-02-66
 			</div>
 			<div class="footer-social">

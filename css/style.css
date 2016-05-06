@@ -3,15 +3,92 @@ body {
 	font-family: 'PT Sans', sans-serif;
 	font-size: 14px;
 	color: #000000;
-	background: #242424;
+	background: #939393;
+} 
+.sprite {
+    background-image: url("../img/decor/sprite.png");
+    background-repeat: no-repeat;
+    display: block;
 }
+
+.sprite--icon-login {
+    width: 18px;
+    height: 16px;
+    background-position: -10px -10px;
+}
+
+.sprite-cross {
+    width: 12px;
+    height: 12px;
+    background-position: -10px -46px;
+}
+
+.sprite-fb-black {
+    width: 12px;
+    height: 22px;
+    background-position: -10px -78px;
+}
+
+.sprite-ico-Instag {
+    width: 21px;
+    height: 21px;
+    background-position: -10px -120px;
+}
+
+.sprite-ico-f {
+    width: 12px;
+    height: 22px;
+    background-position: -10px -161px;
+}
+
+.sprite-ico-vk {
+    width: 25px;
+    height: 16px;
+    background-position: -10px -203px;
+}
+
+.sprite-inst-black {
+    width: 21px;
+    height: 21px;
+    background-position: -10px -239px;
+}
+
+.sprite-mark {
+    width: 8px;
+    height: 8px;
+    background-position: -10px -280px;
+}
+
+.sprite-mark2 {
+    width: 20px;
+    height: 20px;
+    background-position: -10px -308px;
+}
+
+.sprite-quadrate {
+    width: 20px;
+    height: 20px;
+    background-position: -10px -348px;
+}
+
+.sprite-vk-black {
+    width: 25px;
+    height: 16px;
+    background-position: -10px -388px;
+}
+
 .main-header {
 	background: orange; /* для построение сеток, в дальнейшем удалить*/
 }
-.container {
-	background: grey; /* для построение сеток, в дальнейшем удалить*/
+.main-header .container {
+	background: #000000;
+	margin-bottom: -20px; /*не пойму что задает такой большой внешний отступ*/
+}
+.container { 
+	background: #fbf8f5 url("../img/fond/Layer 24.png") repeat;
 	width: 940px;
 	margin: 0 auto;
+	margin-bottom: 0px;
 	padding: 0 10px;	
 }
 .clearfix:after {
@@ -20,38 +97,267 @@ body {
 	clear: both;
 }
 .main-navigation {
-	background: red; /* для построение сеток, в дальнейшем удалить*/
+	background: #000000; 
 	float: left;
-	width: 780px;
+	width: 834px;
+}
+.logotype {
+	display: block;
+	float: left;
+	vertical-align: top;
+	padding-right: 10px;
+	padding-top: 25px;
+	padding-bottom: 16px;
+}
+.top-menu {    /* создаем меню*/
+	padding: 0px;
+	margin: 0px;
+	list-style: none;
+	font-size: 0px;
 	
 }
-.user-block {
-	background: green; /* для построение сеток, в дальнейшем удалить*/
-	float: right;
-	width: 140px;	
+.top-menu li {
+	display: inline-block;
+	line-height: 20px;
+	font-size: 16px;
+	vertical-align: top;
+	background: #000000;
 }
+.top-menu a {
+	display: block;
+	color: white;
+	text-decoration: none;
+	padding: 25px 20px;
+	background: #000000;
+}
+.top-menu a:hover {
+	background: #242424;
+}
+/*.top-menu li:nth-child(4) a {
+	box-shadow: inset 0 -4px 0 0 #ffffff;
+}*/
+.halp-line {
+	position: absolute;
+	top: 67px;
+	left: 696px;
+	width: 58px;
+	height: 4px;
+	background: #ffffff;
+}
+.user-block {
+	background: #000000; 
+	float: right;
+	width: 106px;
+	padding: 0px;
+	margin: 0px;
+	font-size: 0px;
+	
+}
+.user-block a {
+	position: relative;
+	display: block;
+	color: white;
+	text-decoration: none;
+	padding: 25px 20px 25px 50px;
+	background: #000000;
+	line-height: 20px;
+	font-size: 16px;
+	vertical-align: top;
+}
+.user-block a:hover{
+	background: #242424;
+}
+.user-block a:before {
+	content: "";
+	position: absolute;
+	top: 28px;
+	left: 20px;
+	width: 18px;
+    height: 16px;
+	background:  url("../img/decor/sprite.png") no-repeat -10px -10px;
+	opacity: 0.3;
+}
+.user-block a:hover:before{
+	opacity: 1;
+} 
 /* main class="container */
+.heading-one{
+	font-size: 30px;
+	line-height: 42px;
+	padding-top: 42px;
+}
 .breadcrumbs {
-	background: red;
-	width: 480px;
+	color: black;
+	padding: 0px;
+	margin: 0px;
 	margin-bottom: 50px;
 }
+.breadcrumbs li {
+	display: inline-block;
+	margin-left: -2px;
+	padding-right: 0px;
+}
+.breadcrumbs a {
+	position: relative;
+	display: block;
+	color: black;
+	text-decoration: none;
+	font-size: 14px;
+	line-height: 20px;
+	font-weight: bold;
+	vertical-align: top;
+	padding-right: 35px;
+}
+.resources {
+	position: relative;
+	font-size: 14px;
+	line-height: 20px;
+	font-weight: bold;
+	color: #c1bfbd;
+	vertical-align: top;
+}
+.rhomb1{
+	position: absolute;
+	top: 5px;
+	left: 60px;
+	width: 10px;
+	height: 10px;
+	background: #000000;
+	transform: rotate(45deg);
+}
+.rhomb2{
+	position: absolute;
+	top: 5px;
+	left: 65px;
+	width: 10px;
+	height: 10px;
+	background: #000000;
+	transform: rotate(45deg);
+}
+.rhomb3{
+	position: absolute;
+	top: 5px;
+	left: 135px;
+	width: 10px;
+	height: 10px;
+	background: #000000;
+	transform: rotate(45deg);
+}
 .selection-goods {
-	background: green; /* для построение сеток, в дальнейшем удалить*/
+	background: #fbf8f5 url("../img/fond/Layer 24.png") repeat;
 	width: auto;
 }
 .selection {
-	background: red; /* для построение сеток, в дальнейшем удалить*/
 	float: left;
-	width: 230px;
+	width: 200px;
 	margin-right: 10px;
+}
+.heading-select {
+	display: block;
+	font-size: 24px;
+	line-height: 30px;
+	font-weight: bold;
+	margin-bottom: 30px;
+}
+.producer {
+}
+.heading-two{
+	display: block;
+	font-size: 24px;
+	line-height: 30px;
+	font-weight: bold;
+	margin-bottom: 30px;
+	margin-top: 35px;
+}
+input[type="checkbox"] {
+	display: none;
+}
+input[type="checkbox"] + label {
+	display: block;
+	margin: 10px 0px;
+	line-height: 18px;
+	font-weight: bold;
+	font-size: 14px;
+	padding-left: 45px;
+	position: relative;
+	cursor: pointer;
+	padding-bottom: 10px;
+}
+input[type="checkbox"] + label:before {
+	content: "";
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	border: 2px solid black;
+	width: 16px;
+    height: 16px;
+	background: #f9f6f3;
+}
+input[type="checkbox"]:checked + label::after {
+	content: "";
+	position: absolute;
+	top: 4px;
+	left: 4px;
+	background: url("../img/decor/sprite.png") no-repeat -10px -46px;
+	width: 12px;
+    height: 12px;
+} 
+input[type="radio"] {
+	display: none;
+}
+input[type="radio"] + label {
+	display: block;
+	margin: 10px 0px;
+	line-height: 18px;
+	font-weight: bold;
+	font-size: 14px;
+	padding-left: 45px;
+	position: relative;
+	cursor: pointer;
+	padding-bottom: 12px;
+}
+input[type="radio"] + label:before {
+	content: "";
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	border: 2px solid black;
+	border-radius: 50%;
+	width: 16px;
+    height: 16px;
+	background: #f9f6f3;
+}
+input[type="radio"]:checked + label::after {
+	content: "";
+	position: absolute;
+	top: 6px;
+	left: 6px;
+	background: url("../img/decor/sprite.png") no-repeat -10px -280px;
+	width: 8px;
+    height: 8px;
+} 
+input[type="submit"] {
+	display: none;
+}
+input[type="submit"] + label{
+	font-size: 13px;
+	line-height: 18px;
+	padding: 12px 30px;
+	background: black;
+	color: white;
+	cursor: pointer;
+}
+input[type="submit"] + label:hover {
+	background: #663d15;
+}
+.goods-loaded {
+	box-shadow:  0 0 20px 5px #e0ddda;
 }
 .goods-loaded img {
 	width: 220px;
-	height: 165px;
+	height: 165px; 
 }
 .catalog-goods {
-	background: red; /* для построение сеток, в дальнейшем удалить*/
 	float: right;
 	width: 700px;
 	margin-bottom: 44px;
@@ -71,65 +377,183 @@ body {
 .goods-loaded:nth-child(6) {
 	margin-right: 0px;
 }
+.goods-loaded p {
+	font-size: 14px;
+	line-height: 18px;
+	font-weight: bold;
+	text-align: left;
+	padding-left: 15px;
+}
+.cost {
+	display: inline-block;
+	font-size: 14px;
+	line-height: 18px;
+	padding: 12px 30px;
+	background: #e5e5e5;
+}
+.buy {
+	display: inline-block;
+	font-size: 14px;
+	line-height: 18px;
+	font-weight: bold;
+	color: white;
+	text-decoration: none;
+	background: #000000;
+	padding: 12px 15px;
+	margin-bottom: 15px;
+}
+.buy:hover{
+background: #663d15;
+}
 .pl-item {
 	display: block;
 	float: left;
 }
-.pli-link {
-	background: white; /* для построение сеток, в дальнейшем удалить*/
+.pl-item  .pli-link {
+	background: #000000;
 	display: inline-block;
-	padding: 21.5px;
+	font-size: 14px;
+	line-height: 18px;
+	font-weight: bold;
+	color: white;
+	text-decoration: none;
+	padding: 12px 17px;
+	margin-right: 7px;
+	margin-bottom: 10px;
+	
+}
+.pl-item  .pli-link:hover {
+	background: #663d15;
+}
+.pl-item .pli-link:nth-child(2) {
+	background: white;
+	color: black;
 }
 /*footer class="main-footer*/
-.main-footer {
+
+.main-footer .container {
+	background: #242424;
+	box-shadow: inset 0 20px 20px -10px #121212;
+	color: #ffffff;
+	padding-top: 50px;
 }
 .footer-contacts {
-	background: red; /* для построение сеток, в дальнейшем удалить*/
+	font-size: 14px;
+	line-height: 24px;
+	font-weight: bold;
 	float: left;
-	width: 390px;
+	width: 320px;
 	margin-left: 0px;
-	/*margin-top: 48px;
-	margin-bottom: 48px;*/	
+	margin-right: 60px;
+	min-height: 90px;
+}
+.main-footer a {
+	color: #ffffff;
+}
+.main-footer a:hover {
+	text-decoration: none;
 }
 .footer-social {
-	background: red; /* для построение сеток, в дальнейшем удалить*/
+	font-size: 14px;
+	line-height: 24px;
+	font-weight: bold;
 	float: left;
-	width: 142px;
-	margin-left: 10px;
-	/*margin-top: 48px;	
-	margin-bottom: 48px;*/
+	width: 180px;
+	text-align: center;
 }
 .footer-copyright {
-	background: red; /* для построение сеток, в дальнейшем удалить*/
+	font-size: 14px;
+	line-height: 24px;
+	font-weight: bold;
 	float:right;
-	width: 140px;
-	/*margin-bottom: 48px;
-	margin-top: 48px;*/	
+	max-width: 180px;	
+}
+.main-footer p {
+  margin: 0;
+  margin-bottom: 15px;
+}
+.social-btn {
+  display: inline-block;
+  width: 43px;
+  height: 43px;
+  margin: 0 2px;
+  font-size: 0;
+  vertical-align: top;
+  text-decoration: none;
+  background: #000000 url("../img/decor/sprite.png") no-repeat center;
+  /*transition: 
+    background-position 0.5s,
+    background-color 0.5s;*/
+}
+.social-btn:hover {
+  background-color: #ffffff;
+}
+.social-btn-vk {
+  background-position: -2px -188px; 
+}
+
+.social-btn-fb {
+  background-position: 5px -148px; 
+}
+
+.social-btn-inst {
+  background-position: 1px -108px;
+}
+.social-btn-vk:hover {
+  background-position: -2px -372px;
+}
+
+.social-btn-fb:hover {
+  background-position: 5px -65px;
+}
+
+.social-btn-inst:hover {
+  background-position: 2px -226px;
+}
+.footer-copyright p {
+  text-align: center;
+}
+.main-footer .btn {
+	font-size: 14px;
+	line-height: 24px;
+	font-weight: bold;
+	text-decoration: none;
+	padding: 13px 25px;
+	background: black;
+	margin-right: 0px;
+}
+.footer-copyright .btn:hover{
+	color: #000000;
+	background: #ffffff;
+}
+.footer-copyright > p {
+	margin-bottom: 25px;
 }
 /*catalog-item */
-.catalog {
-	background: green; /* для построение сеток, в дальнейшем удалить*/
+.catalog { /*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+	background: #fbf8f5 url("../img/fond/Layer 24.png") repeat;
 	width: auto;
+	padding-bottom: 50px;
 }
 .catalog-item-big img {
+	display: block;
 	width: 461px;
 	height: 500px;
 }
-
 .catalog-item img {
 	width: 140px;
 	height: 150px;
+	box-shadow:  0 0 20px 5px #e0ddda;
 }
-
 .photo {
-	background: red; /* для построение сеток, в дальнейшем удалить*/
 	float: left;
 	width: 460px;
-	text-align: center;
+	text-align: center;	
 }
 .photo .catalog-item-big{
 	display: block;
-	margin-bottom: 22px;
+	margin-bottom: 30px;
+	box-shadow:  0 0 20px 5px #e0ddda;
 }
 .photo .catalog-item {
 	display: block;
@@ -138,27 +562,57 @@ body {
 }
 .catalog-item:nth-child(1) {
 	margin: 0px;
-	
-	
 }	
 .catalog-item:nth-child(2) {
 	margin-left: 0px;
 	margin-top: -10px;
-	margin-bottom: -4px;
-	
+	margin-bottom: 0px;
 }
 .catalog-item:nth-child(3) {
 	margin-top: -10px;
-	margin-bottom: -4px;
-	
+	margin-bottom: 0px;
 }
 .catalog-item:nth-child(4) {
 	margin-top: -10px;
 	margin-right: 0px;
-	margin-bottom: -4px;
+	margin-bottom: 0px;
 }
 .info {
-	background: red;
 	float: right;
 	width: 390px;
+	Font-size: 14px;
+	line-height: 24px;
+	font-weight: bold;
+	color: #000000;
+}
+.info .article {
+	padding-left: 170px;
+	color: #aeaeae;
+	margin-bottom: 5px;
+}
+.info .heading-two{
+	margin-top: 40px;
+	margin-bottom: 20px;
+}
+.info-set{
+	padding: 0px;
+	margin: 0px;
+	list-style: none;
+	font-size: 0px;
+}
+.info-set li {
+	position: relative;
+	font-size: 14px;
+	line-height: 24px;
+	font-weight: bold;
+	padding-left: 30px;
+}
+.info .rhomb4{
+	position: absolute;
+	top: 8px;
+	left: 0px;
+	width: 10px;
+	height: 10px;
+	background: #000000;
+	transform: rotate(45deg);
 }
